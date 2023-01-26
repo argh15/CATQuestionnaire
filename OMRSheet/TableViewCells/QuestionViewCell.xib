@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="51t-JG-zoR" customClass="QuestionViewCell" customModule="OMRSheet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="51t-JG-zoR" id="sHo-Zh-5Gi">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="28"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When I walk up a hill or one flight of stairs I am not breathless" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pu7-eH-dS1">
+                        <rect key="frame" x="14" y="8" width="80" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="V5s-sY-hjz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yqn-Z4-je9">
+                        <rect key="frame" x="102" y="4" width="161" height="20"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-sQ-1LC" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Z0s-rf-Qc3"/>
+                                    <constraint firstAttribute="width" constant="20" id="ght-5m-5He"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected" title="0">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="zeroRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="vhb-CL-yML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvk-c9-PgH" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="28" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="66O-fB-9AT"/>
+                                    <constraint firstAttribute="width" constant="20" id="DQE-3T-raP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="oneRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="kKu-0S-n8K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fF-U4-Fkm" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="56.5" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="j5I-m7-saN"/>
+                                    <constraint firstAttribute="height" constant="20" id="t2g-nD-tA2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="twoRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="wdO-3V-7R4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="db5-fX-11t" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="84.5" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="O3p-YD-eqB"/>
+                                    <constraint firstAttribute="width" constant="20" id="bsC-tf-cek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="threeRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="ByM-au-do3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9F-w1-Y7L" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="113" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="8fX-zn-VZa"/>
+                                    <constraint firstAttribute="height" constant="20" id="uCK-Ew-LAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fourRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="OTt-yl-KAf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcI-dr-gLp" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                                <rect key="frame" x="141" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0DZ-lh-teP"/>
+                                    <constraint firstAttribute="width" constant="20" id="cFJ-bX-tfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fiveRatingAction:" destination="51t-JG-zoR" eventType="touchUpInside" id="wQ1-iQ-MLN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am very sad" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irv-Mq-C8p">
+                        <rect key="frame" x="271" y="8" width="80" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Qfb-Qy-vOC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98N-7I-lVJ" customClass="RadioButton" customModule="OMRSheet" customModuleProvider="target">
+                        <rect key="frame" x="359" y="4" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2dI-wi-iaD"/>
+                            <constraint firstAttribute="width" constant="20" id="iJt-fr-hjA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="0">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                        <state key="selected" title="0">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="irv-Mq-C8p" secondAttribute="bottom" constant="8" id="1Wb-Sp-wno"/>
+                    <constraint firstItem="irv-Mq-C8p" firstAttribute="top" secondItem="sHo-Zh-5Gi" secondAttribute="top" constant="8" id="89q-lZ-ipO"/>
+                    <constraint firstItem="Yqn-Z4-je9" firstAttribute="centerY" secondItem="Pu7-eH-dS1" secondAttribute="centerY" id="9Zf-MO-VFY"/>
+                    <constraint firstItem="98N-7I-lVJ" firstAttribute="leading" secondItem="irv-Mq-C8p" secondAttribute="trailing" constant="8" id="DRS-Vf-vs0"/>
+                    <constraint firstItem="98N-7I-lVJ" firstAttribute="centerY" secondItem="irv-Mq-C8p" secondAttribute="centerY" id="Fs4-af-zhq"/>
+                    <constraint firstAttribute="bottom" secondItem="Pu7-eH-dS1" secondAttribute="bottom" constant="8" id="Hyn-15-SSV"/>
+                    <constraint firstItem="Pu7-eH-dS1" firstAttribute="top" secondItem="sHo-Zh-5Gi" secondAttribute="top" constant="8" id="Iu8-u3-yIw"/>
+                    <constraint firstItem="irv-Mq-C8p" firstAttribute="leading" secondItem="Yqn-Z4-je9" secondAttribute="trailing" constant="8" id="PGv-ul-Xip"/>
+                    <constraint firstItem="Pu7-eH-dS1" firstAttribute="leading" secondItem="sHo-Zh-5Gi" secondAttribute="leading" constant="14" id="Vi8-1A-srT"/>
+                    <constraint firstAttribute="trailing" secondItem="98N-7I-lVJ" secondAttribute="trailing" constant="14" id="Wba-oB-WCf"/>
+                    <constraint firstItem="Yqn-Z4-je9" firstAttribute="leading" secondItem="Pu7-eH-dS1" secondAttribute="trailing" constant="8" id="sQN-e7-58q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="finalScoreButton" destination="98N-7I-lVJ" id="VVN-rD-YPX"/>
+                <outlet property="fiveRatingButton" destination="KcI-dr-gLp" id="uNG-zF-4Dp"/>
+                <outlet property="fourRatingButton" destination="P9F-w1-Y7L" id="4tx-IV-BqA"/>
+                <outlet property="maxScaleLabel" destination="irv-Mq-C8p" id="CRu-9X-gfy"/>
+                <outlet property="minScaleLabel" destination="Pu7-eH-dS1" id="u5a-Lf-Hsz"/>
+                <outlet property="oneRatingButton" destination="tvk-c9-PgH" id="xBB-o6-FPX"/>
+                <outlet property="threeRatingButton" destination="db5-fX-11t" id="E0l-O4-IDH"/>
+                <outlet property="twoRatingButton" destination="5fF-U4-Fkm" id="ZI4-Et-da3"/>
+                <outlet property="zeroRatingButton" destination="gA9-sQ-1LC" id="6oE-oy-gJz"/>
+            </connections>
+            <point key="canvasLocation" x="180.9375" y="17.95774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="73q-QK-mWP" customClass="FooterViewCell" customModule="OMRSheet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="73q-QK-mWP" id="Q2V-ex-dxS">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXy-Aj-rbM">
+                        <rect key="frame" x="16" y="16" width="361" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14L-rA-PPe">
+                                <rect key="frame" x="8" y="8" width="345" height="114"/>
+                                <string key="text">The COPD Assessment Test was developed by a multi-disciplinary group of international experts in COPD supported by GSK. GSK activities with respect to the COPD Assessment Test are overseen by a governance board that includes independent external experts, one of whom chairs the board.
+
+COPD Assessment Test and the CAT logo is trademark of the GlaxoSmithKline group of companies. © 2009 GlaxoSmithKline. All rights reserved.</string>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="10"/>
+                                <color key="textColor" red="0.23921568627450979" green="0.2196078431372549" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.95686274509803915" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="14L-rA-PPe" firstAttribute="leading" secondItem="UXy-Aj-rbM" secondAttribute="leading" constant="8" id="9qL-Fw-h4U"/>
+                            <constraint firstAttribute="trailing" secondItem="14L-rA-PPe" secondAttribute="trailing" constant="8" id="H4f-tB-4Jv"/>
+                            <constraint firstItem="14L-rA-PPe" firstAttribute="top" secondItem="UXy-Aj-rbM" secondAttribute="top" constant="8" id="Q0k-zZ-xn1"/>
+                            <constraint firstAttribute="bottom" secondItem="14L-rA-PPe" secondAttribute="bottom" constant="8" id="VEx-DV-RJA"/>
+                            <constraint firstAttribute="height" constant="130" id="VJH-Jf-I7o"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©  License Inc., 2023" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7im-hk-ZcU">
+                        <rect key="frame" x="16" y="162" width="361" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu0-yE-fd5">
+                        <rect key="frame" x="16" y="226" width="361" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gNx-9Z-V3L"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Submit"/>
+                        <connections>
+                            <action selector="submitAction:" destination="73q-QK-mWP" eventType="touchUpInside" id="gEI-Wd-dqi"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UXy-Aj-rbM" secondAttribute="trailing" constant="16" id="2IH-M9-fol"/>
+                    <constraint firstItem="7im-hk-ZcU" firstAttribute="leading" secondItem="Q2V-ex-dxS" secondAttribute="leading" constant="16" id="4Vd-tI-ZrB"/>
+                    <constraint firstItem="Yu0-yE-fd5" firstAttribute="leading" secondItem="Q2V-ex-dxS" secondAttribute="leading" constant="16" id="KMB-pi-qhX"/>
+                    <constraint firstItem="7im-hk-ZcU" firstAttribute="top" secondItem="UXy-Aj-rbM" secondAttribute="bottom" constant="16" id="QEv-ay-qrO"/>
+                    <constraint firstAttribute="trailing" secondItem="Yu0-yE-fd5" secondAttribute="trailing" constant="16" id="Yay-ye-qej"/>
+                    <constraint firstItem="UXy-Aj-rbM" firstAttribute="leading" secondItem="Q2V-ex-dxS" secondAttribute="leading" constant="16" id="bUd-Fj-gUb"/>
+                    <constraint firstAttribute="bottom" secondItem="Yu0-yE-fd5" secondAttribute="bottom" constant="24" id="dNI-jX-DYk"/>
+                    <constraint firstItem="UXy-Aj-rbM" firstAttribute="top" secondItem="Q2V-ex-dxS" secondAttribute="top" constant="16" id="hUF-YD-o0S"/>
+                    <constraint firstAttribute="trailing" secondItem="7im-hk-ZcU" secondAttribute="trailing" constant="16" id="j2u-6R-cvf"/>
+                    <constraint firstItem="Yu0-yE-fd5" firstAttribute="top" secondItem="7im-hk-ZcU" secondAttribute="bottom" constant="16" id="nXc-Wt-eJF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="licenseView" destination="UXy-Aj-rbM" id="Fg2-a6-edw"/>
+                <outlet property="submitButton" destination="Yu0-yE-fd5" id="yoJ-tZ-8J8"/>
+            </connections>
+            <point key="canvasLocation" x="153" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>
